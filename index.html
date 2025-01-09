@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        html {
+            overflow: hidden;
+        }
+        #player {
+            position: absolute;
+            width: 50px;
+            height: 65px;
+            zoom: 1.9;
+            background-image: url("https://openclipart.org/image/2000px/215080");
+            background-size: 200px 250px;
+            background-position-x: 160px;
+            background-position-y: -60px;
+        }
+        #border {
+            zoom: 1.9;
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 2px solid #ffffff;
+        }
+        #btnLeft{
+            position: absolute;
+            zoom: 10;
+            margin-top: 100px;
+        }
+        #btnRight{
+            position: absolute;
+            zoom: 10;
+            margin-left: 70px;
+            margin-top: 100px;
+        }
+
+        #btnUp{
+            position: absolute;
+            zoom: 10;
+            height: 25px;
+            margin-left: 36px;
+            margin-top: 135px;
+            transform: rotateZ(-90deg);
+        }
+    </style>
+</head>
+<body bgcolor="#000">
+    <div id="player"></div>
+    <div id="border"></div>
+    <button id="btnLeft"><</button>
+    <button id="btnRight">></button>
+    <button id="btnUp">></button>
+    <script src="main.js"></script>
+</body>
+</html>
